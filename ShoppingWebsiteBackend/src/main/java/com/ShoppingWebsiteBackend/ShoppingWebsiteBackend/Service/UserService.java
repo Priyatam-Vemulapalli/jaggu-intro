@@ -30,9 +30,8 @@ public class UserService {
     public ApplicationUser getUserByEmail(String email){
 
         //to get the user by email
-        ApplicationUser applicationUser=userRepository.getUserByEmail(email);
 
-        return applicationUser;
+        return userRepository.getUserByEmail(email);
     }
 
     //update the details through email
